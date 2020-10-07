@@ -3,10 +3,7 @@
     background-color: #dfe0d4;
     color: #ff5335;
     margin: auto;
-}
-
-body {
-    background-color: aqua;
+    animation: naek .6s ease forwards;
 }
 
 h1 {
@@ -27,14 +24,25 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: #dfe0d4;
+    text-align: center;
+    margin: auto;
+}
+
 #spongbob {
     width: 100%;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 .stories {
     padding: 50px;
     background-color: #353535;
     color:  #3e92a3;
+    animation: naek .8s ease forwards;
 }
 
 .col-lg-8, .col-md-7, .col-xl-9 {
@@ -48,11 +56,12 @@ h3 {
     text-align: left;
     box-shadow: 0px 0px 30px #111010;
     transform: perspective(1px) translateZ(0);
-    transition-duration: 0.3s;
-    margin-top: 20px;
+    transition-duration: 0.5s;
+    margin-top: 30px;
     color: #3e92a3;
     padding-left: 20px;
     padding-right: 20px;
+    transition-property: box-shadow, color, background-color, transform, margin, display;
 }
 
 .box > .penjelasan {
@@ -65,7 +74,7 @@ h3 {
 
 .box:hover {
     background-color: #dfe0d4;
-    transform: scale(1.04);
+    transform: scale(1.03);
     box-shadow: 0px 0px 10px #2c2c2c;
     color: #353535;
 }
@@ -109,15 +118,96 @@ h3 {
 
 a {
     color: #3e92a3;
+    transition-duration: 0.3s;
+    transition-property: color;
 }
 a:hover {
     color: #ff5335;
 }
 
-@media (max-width: 992px) {
+.footer {
+    background-color: #3e92a3;
+    color: #dfe0d4;
+    padding: 30px;
+    text-align: center;
 }
 
+.jempol {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+#up {
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    background: #ff5335;
+    border-radius: 50%;
+    border: none;
+}
+
+ #up:active {
+     background: #dd482d;
+ }
+
+ .bg {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #dfe0d4;
+     margin: auto;
+ }
+
+.aye {
+    margin: 0 auto;
+    resize: auto;
+    background-color: #dd482d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: none;
+}
+
+.stories > .content {
+    animation: naek .9s ease forwards;
+}
+/*keyframes suck */
+
+@keyframes naek {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*frameworks*/
 @media (max-width: 576px) {
+    h1 {
+        font-size: 35px;
+    }
+    .col-lg-8, .col-md-7, .col-xl-9 {
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        text-align: center;
+        font-size: 27px;
+    }
+    .jempol {
+        width: 20%;
+    }
 }
   
 @media (min-width: 1200px) {

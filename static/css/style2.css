@@ -243,11 +243,11 @@ b {
 @media (max-width: 576px) {
     h1 {
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
         color: #FFEA83;
     }
     #content {
-        padding: 100px 40px 100px 40px;
+        padding: 100px 30px 100px 30px;
         margin: 30px;
     }
     .img1 {
@@ -256,7 +256,7 @@ b {
     .box {
         padding-left: 27px;
         padding-right: 27px;
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
     }
     .rightimg {
@@ -291,7 +291,7 @@ b {
         width: 15%;
     }
     .smallHeader {
-        font-size: 22px;
+        font-size: 18px;
     }
     .col-xl-1, .col-lg-2, .col-md-3, .col-xl-10, .col-lg-11, .col-md-12 {
         display: block;
