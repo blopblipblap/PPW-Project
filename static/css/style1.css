@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+.content {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #96B6C9;
+}
+.content > ul {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 0px;
+}
+.content > img {
+    padding-bottom: 20px;
+}
+.table {
+    font-size: small;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+th, td {
+    padding: 15px;
+    border: 1px solid #96B6C9;
+    color: #96B6C9;
+}
+.ig {
+    padding-top: 40px;
+    margin-right: 50px;
+}
+.linkedin {
+    padding-top: 40px;
+    margin-left: 50px;
+}
+h3 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 1000;
+}
+
+.bar {
+    border-top: 1px solid #96B6C9;
+}

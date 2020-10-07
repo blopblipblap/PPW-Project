@@ -1,0 +1,125 @@
+{% extends 'storythree.html' %}
+{% load static %}
+
+{% block content %}
+<section class="box row">
+    <!--Profile-->
+
+    <!--Desktop-->
+    <div class="col-xl-9 col-lg-8 col-md-7">
+        <h1>Profile</h1>
+        <p>
+            Nama: Vanessa Emily Agape<br>
+            NPM: 1906350793<br>
+            Angkatan: 2019<br>
+            Berkuliah di: Fakultas Ilmu Komputer, Universitas Indonesia
+        </p>
+        <p style="margin-top: 0px; padding-top: 20px;">
+            Saya adalah mahasiswa yang normal yang sedang berjuang di Fasilkom.
+            Saya tertarik dalam web development jadi semoga saya dapat mendapat banyak
+            pengetahuan dalam pelajaran PPW ini :)
+        </p>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-5 rightimg">
+        <img class="rightimg" src="{% static 'img/haha.png' %}" />
+    </div>
+
+    <!--Mobile-->
+    <div class="col-xl-1 col-lg-2 col-md-3">
+        <img class="rightimg" src="{% static 'img/haha.png' %}" />
+    </div>
+    <div class="col-xl-10 col-lg-11 col-md-12">
+        <h1>Profile</h1>
+        <p>
+            Nama: Vanessa Emily Agape<br>
+            NPM: 1906350793<br>
+            Angkatan: 2019<br>
+            Berkuliah di: Fakultas Ilmu Komputer, Universitas Indonesia
+        </p>
+        <p style="margin-top: 0px; padding-top: 20px;">
+            Saya adalah mahasiswa yang normal yang sedang berjuang di Fasilkom.
+            Saya tertarik dalam web development jadi semoga saya dapat mendapat banyak
+            pengetahuan dalam pelajaran PPW ini :)
+        </p>
+    </div>
+</section>
+<section class="box" style="margin-top: 50px">
+    <!--Hobby-->
+    <h1>Hobby</h1>
+    <ul>
+        <li>Menggambar</li>
+        <li>Youtube-an</li>
+        <li>Main Dragon Raja</li>
+    </ul>
+</section>
+<section class="box" style="margin-top: 50px;">
+    <!--Riwayat Pendidikan-->
+    <h1>Riwayat Pendidikan</h1>
+    <table class="desktoptable">
+        <!--Table Desktop View-->
+        <tr>
+            <th style="font-family: open_sansextrabold;">Jenjang Pendidikan</th>
+            <th style="font-family: open_sansextrabold">Nama Institusi Pendidikan</th>
+            <th style="font-family: open_sansextrabold">Tahun</th>
+        </tr>
+        <tr>
+            <td>TK</td>
+            <td>Mardi Yuana Depok</td>
+            <td>2005-2007</td>
+        </tr>
+        <tr>
+            <td>SD</td>
+            <td>Mardi Yuana Depok</td>
+            <td>2007-2013</td>
+        </tr>
+        <tr>
+            <td>SMP</td>
+            <td>Pangudi Luhur</td>
+            <td>2013-2016</td>
+        </tr>
+        <tr>
+            <td>SMA</td>
+            <td>Kolese Gonzaga</td>
+            <td>2016-2019</td>
+        </tr>
+        <tr>
+            <td>Kuliah</td>
+            <td>Universitas Indonesia</td>
+            <td>2019-sekarang</td>
+        </tr>
+    </table>
+    <table class="mobiletable" style="border: 1px solid #B80201;">
+        <!--Table Mobile View-->
+        <tr>
+            <td><b>TK</b><br>
+                Mardi Yuana Depok<br>
+                2005-2007
+            </td>
+        </tr>
+        <tr>
+            <td><b>SD</b><br>
+                Mardi Yuana Depok<br>
+                2007-2013
+            </td>
+        </tr>
+        <tr>
+            <td><b>SMP</b><br>
+                Pangudi Luhur<br>
+                2013-2016
+            </td>
+        </tr>
+        <tr>
+            <td><b>SMA</b><br>
+                Kolese Gonzaga<br>
+                2016-2019
+            </td>
+        </tr>
+        <tr>
+            <td><b>Kuliah</b><br>
+                Universitas Indonesia<br>
+                2019-sekarang
+            </td>
+        </tr>
+    </table>
+</section>
+{% endblock content %}

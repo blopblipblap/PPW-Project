@@ -2,10 +2,142 @@
 {% load static %}
 
 {% block meta %}
-<title>Hello, world!</title>
+<title>Website Vanessa</title>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300, 800">
 {% endblock meta %}
 
 {% block content %}
-  <h1>Hello, world!</h1>
-  <p><img src="{% static 'img/django-logo-negative.svg' %}"></p>
+<div class="welcome row">
+  <div class="col-xl-3 col-lg-4 col-md-5">
+    <img id="spongbob" src="{% static 'img/spongbob.gif' %}">
+  </div>
+  <div class="col-lg-8 col-md-7 col-xl-9">
+    <h1>Hello, world!</h1>
+    <p>Website ini adalah terminal untuk story-story PPW milik saya,
+      Vanessa :D
+    </p>
+  </div>
+</div>
+
+<div class="stories">
+  <h2 style="margin: 0px 0px 10px 0px;">Story-story PPW saya</h2>
+  <div class="content">
+    <section class="row" style="text-align: cemter;">
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3> Story 1</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            #1 Intro to WebPro<br>
+            Membuat website mengenai profile saya dengan simple
+          </p>
+          <p class="link">
+            ><a href="/story1">Hasil Story 1 saya</a><
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 2</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            #2 Design Your Own Website<br>
+            Membuat wireframe dan prototype suatu website
+          </p>
+          <p class="link">
+            ><a href="https://www.figma.com/proto/4i9KTjtrtS8zBCi1U3fLQm/story-2-pepew?node-id=43%3A0&scaling=min-zoom">
+              Hasil Story 2 saya</a><
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 3</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            #3 HTML Bootstrap<br>
+            Membuat website dengan memanfaatkan bootstrap dan CSS files
+          </p>
+          <p class="link">
+            ><a href="/aboutme">Hasil Story 3 saya</a><
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 4</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            #4 Django (Views + Template)<br>
+            Halaman ini! :D
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 5</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            Coming Soon!!!
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 6</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            Coming Soon!!!
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 7</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            Coming Soon!!!
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 8</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            Coming Soon!!!
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 9</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            Coming Soon!!!
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5 col-md-6">
+        <div class="box">
+          <h3>Story 10</h3>
+          <p class="clickme">Hover / Click me!</p>
+          <p class="penjelasan">
+            Coming Soon!!!
+          </p>
+        </div>
+      </div>
+  </div>
+  </section>
+</div>
 {% endblock content %}

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+  <link rel="stylesheet" href="{%static 'css/bootstrap.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+  <title>Story 3 Vanessa</title>
+</head>
+
+<body>
+</body>
+<div id="content">
+  <img src="{% static 'img/smile.png' %}" class="smile" />
+  <!--Header-->
+  <div class="container">
+    <a class="button" href="/aboutme">ABOUT ME</a>
+    <a class="button" href="/myexperience">MY EXPERIENCE</a>
+  </div>
+  <hr>
+  {% block content %}
+  {% endblock content %}
+  <hr>
+  <section>
+    <p class="footer">© Story 3 PPW</p>
+    <div>
+      <a href="https://www.pixiv.net/en/users/18022325" style="text-decoration: none;">
+        <img class="medsos" src="{% static 'img/pixiv.png' %}">
+      </a>
+      <a href="https://www.linkedin.com/in/vanessa-emily-agape-a548661b1/">
+        <img class="medsos" src="{% static 'img/linkedin(web).png' %}">
+      </a>
+    </div>
+  </section>
+</div>
+
+</html>
