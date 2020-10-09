@@ -13,11 +13,11 @@
 <body>
 </body>
 <div id="content">
-  <img src="{% static 'img/smile.png' %}" class="smile" />
+  <img src="{% static 'story_3/smile.png' %}" class="smile" />
   <!--Header-->
   <div class="container">
-    <a class="button" href="/aboutme">ABOUT ME</a>
-    <a class="button" href="/myexperience">MY EXPERIENCE</a>
+    <a class="button" href="{% url 'aboutme' %}">ABOUT ME</a>
+    <a class="button" href="{% url 'myexperience' %}">MY EXPERIENCE</a>
   </div>
   <hr>
   {% block content %}
@@ -27,10 +27,10 @@
     <p class="footer">© Story 3 PPW</p>
     <div>
       <a href="https://www.pixiv.net/en/users/18022325" style="text-decoration: none;">
-        <img class="medsos" src="{% static 'img/pixiv.png' %}">
+        <img class="medsos" src="{% static 'story_3/pixiv.png' %}">
       </a>
       <a href="https://www.linkedin.com/in/vanessa-emily-agape-a548661b1/">
-        <img class="medsos" src="{% static 'img/linkedin(web).png' %}">
+        <img class="medsos" src="{% static 'story_3/linkedin(web).png' %}">
       </a>
     </div>
   </section>
