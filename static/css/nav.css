@@ -37,8 +37,6 @@
     height:100%;;
     overflow :hidden;
     flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
     list-style: none;
     display: flex;
     margin: 0;
