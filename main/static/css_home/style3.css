@@ -179,8 +179,8 @@ a:hover {
 .stories > .content {
     animation: naek .9s ease forwards;
 }
-/*keyframes suck */
 
+/*keyframes */
 @keyframes naek {
     0% {
         transform: translateY(300px);

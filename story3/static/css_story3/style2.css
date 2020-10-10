@@ -80,6 +80,7 @@ li {
     border: 1px solid #B80201;
     border-radius: 30px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     font-size: 30px;
     color: #B80201;
     transform: perspective(1px) translateZ(0);

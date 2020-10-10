@@ -1,93 +1,136 @@
-{% extends 'storythree.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
+{% block meta %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'css_story3/style2.css' %}">
+<link rel="stylesheet" href="{%static 'css/bootstrap.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<title>Story 3 Vanessa</title>
+{% endblock meta %}
+
 {% block content %}
-<section class="box row">
-    <!--Organisasi-->
+<div id="content">
+    <img src="{% static 'story_3/smile.png' %}" class="smile" />
 
-    <!--Desktop-->
-    <div class="col-xl-9 col-lg-8 col-md-7">
-        <h1>Organisasi</h1>
-        <p class="smallHeader">BEM Fasilkom UI 2020<br>Biro Media</p>
-        <p style="margin-top: 0px; padding-top: 15px;">
-            Saya menjabat sebagai Staff di BEM Fasilkom UI 2020 Biro Media. Saya salah satu penanggung-jawab
-            Boolean.
-            Jika diperkenankan, silahkan baca Boolean edisi 26 di
-            <a href="https://bit.ly/Boolean26Media2020" style="color: #B80201;">
-                bit.ly/Boolean26Media2020
+    <!--Header-->
+    <div class="container">
+        <a class="button" href="{% url 'aboutme' %}">ABOUT ME</a>
+        <a class="button" href="{% url 'myexperience' %}">MY EXPERIENCE</a>
+    </div>
+    <hr>
+
+    <section class="box row">
+        <!--Organisasi-->
+        <!--Desktop-->
+        <div class="col-xl-9 col-lg-8 col-md-7">
+            <h1>Organisasi</h1>
+            <p class="smallHeader">BEM Fasilkom UI 2020<br>Biro Media</p>
+            <p style="margin-top: 0px; padding-top: 15px;">
+                Saya menjabat sebagai Staff di BEM Fasilkom UI 2020 Biro Media. Saya salah satu penanggung-jawab
+                Boolean.
+                Jika diperkenankan, silahkan baca Boolean edisi 26 di
+                <a href="https://bit.ly/Boolean26Media2020" style="color: #B80201;">
+                    bit.ly/Boolean26Media2020
+                </a>
+            </p>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-5 rightimg">
+            <img class="rightimg" src="{% static 'story_3/logo-bem.png' %}" />
+        </div>
+
+        <!--Mobile-->
+        <div class="col-xl-10 col-lg-11 col-md-12">
+            <img src="{% static 'story_3/logo-bem.png' %}" class="rightimg" />
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-3">
+            <h1>Organisasi</h1>
+            <p class="smallHeader">BEM Fasilkom UI 2020<br>Biro Media</p>
+            <p style="margin-top: 0px; padding-top: 15px;">
+                Saya menjabat sebagai Staff di BEM Fasilkom UI 2020 Biro Media. Saya salah satu penanggung-jawab
+                Boolean.
+                Jika diperkenankan, silahkan baca Boolean edisi 26 di
+                <a href="https://bit.ly/Boolean26Media2020" style="color: #B80201;">
+                    bit.ly/Boolean26Media2020
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section class="box row" style="margin-top: 50px;">
+        <!--Kepanitiaan-->
+        <!--Desktop-->
+        <div class="col-xl-9 col-lg-8 col-md-7">
+            <h1>Kepanitiaan</h1>
+            <p class="smallHeader">Pesta Rakyat Komputer 2020<br>Visual Design</p>
+            <p style="margin-top: 0px; padding-top: 15px;">
+                Saya menjabat sebagai Staff di acara Pesta Rakyat Komputer 2020 pada bidang Visual Design.
+            </p>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-5 rightimg">
+            <img class="rightimg" src="{% static 'story_3/perak(web).png' %}" />
+        </div>
+
+        <!--Mobile-->
+        <div class="col-xl-1 col-lg-2 col-md-3">
+            <img class="rightimg" src="{% static 'story_3/perak(web).png' %}" />
+        </div>
+        <div class="col-xl-10 col-lg-11 col-md-12">
+            <h1>Kepanitiaan</h1>
+            <p class="smallHeader">Pesta Rakyat Komputer 2020<br>Visual Design</p>
+            <p style="margin-top: 0px; padding-top: 15px;">
+                Saya menjabat sebagai Staff di acara Pesta Rakyat Komputer 2020 pada bidang Visual Design.
+            </p>
+        </div>
+    </section>
+
+    <section class="box" style="margin-top: 50px;text-align: left;">
+        <!--Karya Gambar-->
+        <h1>Karya Gambar</h1>
+        <div class="column">
+            <div class="pic">
+                <img src="{% static 'story_3/kugutsu.jpg' %}" width="100%">
+            </div>
+            <div class="pic">
+                <img src="{% static 'story_3/handicap+.png' %}" width="100%">
+            </div>
+            <div class="pic">
+                <img src="{% static 'story_3/sorarusbday.png' %}" width="100%">
+            </div>
+            <div class="pic">
+                <img src="{% static 'story_3/aye.png' %}" width="100%">
+            </div>
+            <div class="pic">
+                <img src="{% static 'story_3/weeee.png' %}" width="100%">
+            </div>
+            <div class="pic">
+                <img src="{% static 'story_3/reimu.png' %}" width="100%">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <p class="footer">© Story 3 PPW</p>
+        <div>
+            <a href="https://www.pixiv.net/en/users/18022325" style="text-decoration: none;">
+                <img class="medsos" src="{% static 'story_3/pixiv.png' %}">
             </a>
-        </p>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-5 rightimg">
-        <img class="rightimg" src="{% static 'story_3/logo-bem.png' %}" />
-    </div>
-
-    <!--Mobile-->
-    <div class="col-xl-10 col-lg-11 col-md-12">
-        <img src="{% static 'story_3/logo-bem.png' %}" class="rightimg" />
-    </div>
-    <div class="col-xl-1 col-lg-2 col-md-3">
-        <h1>Organisasi</h1>
-        <p class="smallHeader">BEM Fasilkom UI 2020<br>Biro Media</p>
-        <p style="margin-top: 0px; padding-top: 15px;">
-            Saya menjabat sebagai Staff di BEM Fasilkom UI 2020 Biro Media. Saya salah satu penanggung-jawab
-            Boolean.
-            Jika diperkenankan, silahkan baca Boolean edisi 26 di
-            <a href="https://bit.ly/Boolean26Media2020" style="color: #B80201;">
-                bit.ly/Boolean26Media2020
+            <a href="https://www.linkedin.com/in/vanessa-emily-agape-a548661b1/">
+                <img class="medsos" src="{% static 'story_3/linkedin(web).png' %}">
             </a>
-        </p>
-    </div>
-</section>
-<section class="box row" style="margin-top: 50px;">
-    <!--Kepanitiaan-->
-
-    <!--Desktop-->
-    <div class="col-xl-9 col-lg-8 col-md-7">
-        <h1>Kepanitiaan</h1>
-        <p class="smallHeader">Pesta Rakyat Komputer 2020<br>Visual Design</p>
-        <p style="margin-top: 0px; padding-top: 15px;">
-            Saya menjabat sebagai Staff di acara Pesta Rakyat Komputer 2020 pada bidang Visual Design.
-        </p>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-5 rightimg">
-        <img class="rightimg" src="{% static 'story_3/perak(web).png' %}" />
-    </div>
-
-    <!--Mobile-->
-    <div class="col-xl-1 col-lg-2 col-md-3">
-        <img class="rightimg" src="{% static 'story_3/perak(web).png' %}" />
-    </div>
-    <div class="col-xl-10 col-lg-11 col-md-12">
-        <h1>Kepanitiaan</h1>
-        <p class="smallHeader">Pesta Rakyat Komputer 2020<br>Visual Design</p>
-        <p style="margin-top: 0px; padding-top: 15px;">
-            Saya menjabat sebagai Staff di acara Pesta Rakyat Komputer 2020 pada bidang Visual Design.
-        </p>
-    </div>
-</section>
-<section class="box" style="margin-top: 50px;text-align: left;">
-    <!--Karya Gambar-->
-    <h1>Karya Gambar</h1>
-    <div class="column">
-        <div class="pic">
-            <img src="{% static 'story_3/kugutsu.jpg' %}" width="100%">
         </div>
-        <div class="pic">
-            <img src="{% static 'story_3/handicap+.png' %}" width="100%">
-        </div>
-        <div class="pic">
-            <img src="{% static 'story_3/sorarusbday.png' %}" width="100%">
-        </div>
-        <div class="pic">
-            <img src="{% static 'story_3/aye.png' %}" width="100%">
-        </div>
-        <div class="pic">
-            <img src="{% static 'story_3/weeee.png' %}" width="100%">
-        </div>
-        <div class="pic">
-            <img src="{% static 'story_3/reimu.png' %}" width="100%">
-        </div>
+    </section>
+    <hr>
+  <section>
+    <p class="footer">© Story 3 PPW</p>
+    <div>
+      <a href="https://www.pixiv.net/en/users/18022325" style="text-decoration: none;">
+        <img class="medsos" src="{% static 'story_3/pixiv.png' %}">
+      </a>
+      <a href="https://www.linkedin.com/in/vanessa-emily-agape-a548661b1/">
+        <img class="medsos" src="{% static 'story_3/linkedin(web).png' %}">
+      </a>
     </div>
-</section>
+  </section>
+</div>
 {% endblock content %}

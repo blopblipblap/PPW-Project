@@ -1,10 +1,27 @@
-{% extends 'storythree.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
+{% block meta %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'css_story3/style2.css' %}">
+<link rel="stylesheet" href="{%static 'css/bootstrap.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<title>Story 3 Vanessa</title>
+{% endblock meta %}
+
 {% block content %}
+<div id="content">
+    <img src="{% static 'story_3/smile.png' %}" class="smile" />
+
+    <!--Header-->
+    <div class="container">
+      <a class="button" href="{% url 'aboutme' %}">ABOUT ME</a>
+      <a class="button" href="{% url 'myexperience' %}">MY EXPERIENCE</a>
+    </div>
+    <hr>
+
 <section class="box row">
     <!--Profile-->
-
     <!--Desktop-->
     <div class="col-xl-9 col-lg-8 col-md-7">
         <h1>Profile</h1>
@@ -43,6 +60,7 @@
         </p>
     </div>
 </section>
+
 <section class="box" style="margin-top: 50px">
     <!--Hobby-->
     <h1>Hobby</h1>
@@ -52,6 +70,7 @@
         <li>Main Dragon Raja</li>
     </ul>
 </section>
+
 <section class="box" style="margin-top: 50px;">
     <!--Riwayat Pendidikan-->
     <h1>Riwayat Pendidikan</h1>
@@ -122,4 +141,17 @@
         </tr>
     </table>
 </section>
+<hr>
+  <section>
+    <p class="footer">© Story 3 PPW</p>
+    <div>
+      <a href="https://www.pixiv.net/en/users/18022325" style="text-decoration: none;">
+        <img class="medsos" src="{% static 'story_3/pixiv.png' %}">
+      </a>
+      <a href="https://www.linkedin.com/in/vanessa-emily-agape-a548661b1/">
+        <img class="medsos" src="{% static 'story_3/linkedin(web).png' %}">
+      </a>
+    </div>
+  </section>
+</div>
 {% endblock content %}

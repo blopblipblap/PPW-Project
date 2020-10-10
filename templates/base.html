@@ -6,6 +6,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300, 800">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   {% block meta %}
   {% endblock meta %}
 </head>
@@ -13,6 +16,20 @@
 <body>
   {% block content %}
   {% endblock content %}
+  <input type="checkbox" id="menu" />
+  <label for="menu" class="menu">
+    <i class="material-icons">menu</i>
+  </label>
+
+  <nav class="nav">
+    <ul>
+      <a href="{% url 'home' %}"><li class="linky">Home</li></a>
+      <a href="{% url 'index' %}"><li class="linky">Story 1</li></a>
+      <a href="https://www.figma.com/proto/4i9KTjtrtS8zBCi1U3fLQm/story-2-pepew?node-id=43%3A0&scaling=min-zoom">
+        <li class="linky">Story 2</li></a>
+        <a href="{% url 'aboutme' %}"><li class="linky">Story 3</li></a>
+    </ul>
+  </nav>
 </body>
 
 </html>
