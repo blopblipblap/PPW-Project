@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Jadwal Matkul Vanessa</title>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+{% endblock meta %}
+
+{% block content %}
+<section id="Judul">
+    <div class="welcome row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+            <img id="spongbob" src="{% static 'form_s/study.gif' %}">
+        </div>
+        <div class="col-lg-8 col-md-7 col-xl-9">
+            <h1>Jadwal Mata Kuliah Vanessa</h1>
+            <p>Mari kita belajar dengan giat</p>
+        </div>
+    </div>
+</section>
+
+<section id="isiForm">
+    <div class="stories">
+        <h2 style="margin: 0px 0px 30px 0px;">Yuk susun jadwal!</h2>
+        <div class="row">
+            <div class="col-xl-5 col-lg-7 col-md-6" style="text-align: left;">
+                <form class="form" action="savematkul" method="POST">
+                    {% csrf_token %}
+                    <p class="inputs">{{ form.name }}</p>
+                    <p class="inputs">{{ form.dosen }}</p>
+                    <p class="inputs">{{ form.sks }}</p>
+                    <p class="inputs">{{ form.deskripsi }}</p>
+                    <p class="inputs">{{ form.semester }}</p>
+                    <p class="inputs">{{ form.kelas }}</p>
+                    <input type="submit" value="Submit" class="submitboton">
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-5 col-xl-7">
+                {% if matkuls %}
+                {% for matkul in matkuls %}
+                <button class="namanya">{{ matkul.name }}</button>
+                <div class="details">
+                    {{ matkul.dosen }}
+                    {{ matkul.sks }}
+                    {{ matkul.deskripsi }}
+                    {{ matkul.semester }}
+                    {{ matkul.kelas }}
+                </div>
+                <br>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="#Judul">
+    <button id="up">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+</a>
+
+<div class="footer">
+    <img class="jempol" src="{%static 'img/jempol.gif' %}">
+    <h4>© Story 5 PPW</h4>
+</div>
+{% endblock content %}
