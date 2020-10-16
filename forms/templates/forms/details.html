@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Jadwal Matkul Vanessa</title>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+{% endblock meta %}
+
+{% block content %}
+<section id="Judul">
+    <div class="welcome row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+            <img id="spongbob" src="{% static 'form_s/study.gif' %}">
+        </div>
+        <div class="col-lg-8 col-md-7 col-xl-9">
+            <h1>Detail Mata Kuliah Vanessa</h1>
+            <p>Detail tentang mata kuliah</p>
+        </div>
+    </div>
+</section>
+
+<section id="isiForm">
+    <div class="stories">
+        <h2 class="namamatkul">
+            {{ detail.name }}</h2>
+        <div class="ditel">
+            <p><span class="bolder">Dosen: </span><span class="yo">{{ detail.dosen }}</span></p>
+            <p><span class="bolder">Bobot SKS: </span><span class="yo">{{ detail.sks }}</span></p>
+            <p><span class="bolder">Deskripsi: </span><span class="yo">{{ detail.deskripsi }}</span></p>
+            <p><span class="bolder">Semester: </span><span class="yo">{{ detail.semester }}</span></p>
+            <p><span class="bolder">Kelas: </span><span class="yo">{{ detail.kelas }}</span></p>
+            <form method="POST" action="delete/">
+                {% csrf_token %}
+                <input type="submit" value="Delete" class="delete"/>
+            </form>
+        </div>
+    </div>
+</section>
+
+<a href="#Judul">
+    <button id="up">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+</a>
+
+<div class="footer">
+    <img class="jempol" src="{%static 'img/jempol.gif' %}">
+    <h4>© Story 5 PPW</h4>
+</div>
+{% endblock content %}

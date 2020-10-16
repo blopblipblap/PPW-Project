@@ -22,9 +22,9 @@
 
 <section id="isiForm">
     <div class="stories">
-        <h2 style="margin: 0px 0px 30px 0px;">Yuk susun jadwal!</h2>
+        <h2 class="headingform">Yuk susun jadwal!</h2>
         <div class="row">
-            <div class="col-xl-5 col-lg-7 col-md-6" style="text-align: left;">
+            <div class="col-xl-6 col-lg-6 col-md-6" style="text-align: left;">
                 <form class="form" action="savematkul" method="POST">
                     {% csrf_token %}
                     <p class="inputs">{{ form.name }}</p>
@@ -36,17 +36,12 @@
                     <input type="submit" value="Submit" class="submitboton">
                 </form>
             </div>
-            <div class="col-lg-6 col-md-5 col-xl-7">
+            <div class="col-lg-5 col-md-5 col-xl-5 list">
                 {% if matkuls %}
                 {% for matkul in matkuls %}
-                <button class="namanya">{{ matkul.name }}</button>
-                <div class="details">
-                    {{ matkul.dosen }}
-                    {{ matkul.sks }}
-                    {{ matkul.deskripsi }}
-                    {{ matkul.semester }}
-                    {{ matkul.kelas }}
-                </div>
+                <a class="listkotak" href="{% url 'details' angka=matkul.id %}"><div class="boxlist">
+                    {{ matkul.name }}
+                </div></a>
                 <br>
                 {% endfor %}
                 {% endif %}
