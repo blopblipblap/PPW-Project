@@ -22,12 +22,16 @@
 
 <section id="isiForm">
     <div class="stories">
-        <h2 class="headingkeg">Form Ikut Kegiatan <br> {{ detail.nama }}</h2>
-        <form class="form" action="saveorang" method="POST">
-            {% csrf_token %}
-            <p class="inputs">{{ urang.orang }}</p>
-            <input type="submit" value="+ Peserta" class="submitboton">
-        </form>
+        <div class="pesertan">
+            <h2 class="headingkeg">Form Ikut Kegiatan <br> 
+                <span class="namakegi">{{ detail.nama }}</span></h2>
+            <form class="form" action="saveorang" method="POST">
+                {% csrf_token %}
+                <p class="inputs">{{ urang.orang }}</p>
+                <input type="submit" value="+ Peserta" class="submitboton">
+            </form>
+            <a class="jelmaan" href="{% url 'kegiatan' %}"> < Back</a>
+        </div>
     </div>
 </section>
 

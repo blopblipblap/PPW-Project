@@ -360,6 +360,72 @@ a:hover {
     color: #ff5335;
     font-size: 30px;
 }
+
+.orang {
+    font-size: 18px;
+    font-style: italic;
+    margin: 5px;
+}
+
+.orangnew {
+    font-style: normal;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.boxpeserta {
+    padding-bottom: 33px;
+    padding-top: 33px;
+    text-align: left;
+    box-shadow: 0px 0px 30px #111010;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.5s;
+    margin-top: 30px;
+    color: #353535;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-property: all;
+    background-color: #dfe0d4;
+    text-align: center;
+}
+
+.boxpeserta:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px #2c2c2c;
+}
+
+.judulkeg {
+    color: #ff5335;
+    margin-bottom: 15px;
+}
+
+.sudahada {
+    margin: 40px 0px 0px 0px;
+}
+
+.kamumau {
+    color: #3e92a3;
+}
+
+.pesertan {
+    text-align: center;
+}
+
+.namakegi {
+    color: #ff5335;
+    font-size: 40px;
+}
+
+.jelmaan {
+    color: #dfe0d4;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.jelmaan:hover {
+    text-decoration: none;
+    color: #ff5335;
+}
 /*keyframes */
 @keyframes naek {
     0% {
@@ -407,9 +473,18 @@ a:hover {
     .submitboton {
         margin-bottom: 30px;
     }
-    
     .namamatkul {
         font-size: 40px;
+    }
+    .orangnew {
+        text-align: center;
+    }
+    .kamumau {
+        text-align: center;
+    }
+    .sudahada {
+        text-align: center;
+        margin: 15px 0px 0px 0px;
     }
 }
 
@@ -470,5 +545,13 @@ a:hover {
     .yo {
         font-size: 20px;
     }
-    
+    .judulkeg {
+        font-size: 30px;
+    }
+    .orangnew {
+        font-size: 18px;
+    }
+    .headingkeg {
+        font-size: 40px;
+    }
 }

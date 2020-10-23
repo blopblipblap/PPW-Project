@@ -23,31 +23,33 @@
 <section id="isiForm">
     <div class="stories">
         <h2 class="headingkeg">Daftar Kegiatan</h2>
-        <p>Klik kegiatan yang kamu mau untuk mendaftar :D</p>
+        <p class="kamumau">Klik kegiatan yang kamu mau untuk mendaftar :D</p>
         <form class="form" action="savekegiatan" method="POST">
             {% csrf_token %}
             <p class="inputs">{{ kegiatan.nama }}</p>
             <input type="submit" value="+ Kegiatan" class="submitboton">
         </form>
+        <p class="sudahada">Kegiatan yang sudah ada:</p>
         {% if kegiatans %}
         <div class="row">
             {% for kegiatan in kegiatans %}
             <div class="col-lg-4 col-xl-4 col-md-4">
-            <a class="listkotak" href="{% url 'detailkeg' angka=kegiatan.id %}"><div class="boxlist">
-                <h4>{{ kegiatan.nama }}</h4>
-                <ul>
-                    {% for orang in orangs %}
-                    {% if orang.kegiatan.nama == kegiatan.nama %}
-                    <li>{{ orang.orang }}</li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div></a>
-            <br>
+                <a class="listkotak" href="{% url 'detailkeg' angka=kegiatan.id %}">
+                    <div class="boxpeserta">
+                        <h4 class="judulkeg">{{ kegiatan.nama }}</h4>
+                        <p class="orangnew">Peserta:</p>
+                        {% for orang in orangs %}
+                        {% if orang.kegiatan.nama == kegiatan.nama %}
+                        <p class="orang">{{ orang.orang }}</p>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </a>
+                <br>
             </div>
             {% endfor %}
             {% endif %}
-    </div>
+        </div>
 </section>
 
 <a href="#Judul">
