@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Jadwal Matkul Vanessa</title>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+{% endblock meta %}
+
+{% block content %}
+<section id="Judul">
+    <div class="welcome row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+            <img id="spongbob" src="{% static 'kegiata_n/gila.gif' %}">
+        </div>
+        <div class="col-lg-8 col-md-7 col-xl-9">
+            <h1>Daftar Kegiatan Vanessa</h1>
+            <p>Ayuk kita berkegiatan</p>
+        </div>
+    </div>
+</section>
+
+<section id="isiForm">
+    <div class="stories">
+        <h2 class="headingkeg">Form Ikut Kegiatan <br> {{ detail.nama }}</h2>
+        <form class="form" action="saveorang" method="POST">
+            {% csrf_token %}
+            <p class="inputs">{{ urang.orang }}</p>
+            <input type="submit" value="+ Peserta" class="submitboton">
+        </form>
+    </div>
+</section>
+
+<a href="#Judul">
+    <button id="up">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+</a>
+
+<div class="footer">
+    <img class="jempol" src="{%static 'img/jempol.gif' %}">
+    <h4>© Story 6 PPW</h4>
+</div>
+{% endblock content %}

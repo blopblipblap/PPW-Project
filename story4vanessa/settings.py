@@ -51,6 +51,7 @@ if not PRODUCTION:
 # Application definition
 
 INSTALLED_APPS = [
+    'django_nose',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -61,6 +62,7 @@ INSTALLED_APPS = [
     'story1',
     'story3',
     'forms',
+    'kegiatan',
 ]
 
 MIDDLEWARE = [
@@ -169,3 +171,12 @@ for directory in [*STATICFILES_DIRS, STATIC_ROOT]:
 # Enable compression and caching features of whitenoise.
 # You can remove this if it causes problems on your setup.
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Use nose to run all tests
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+#Tell nose to measure coverage on 'kegiatan' app
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=kegiatan',
+]
