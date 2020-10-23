@@ -59,5 +59,5 @@ class Form(TestCase):
         self.assertEquals(found.func, details)
 
     def test_delete_ada(self):
-        found = resolve('forms/details/1/delete/')
+        found = resolve('/forms/details/1/delete/')
         self.assertEquals(found.func, deletematkul)
