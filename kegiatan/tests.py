@@ -69,4 +69,10 @@ class kegiatan(TestCase):
     def test_saveorang_ada(self):
         found = resolve('/kegiatan/details/1/saveorang')
         self.assertEquals(found.func, saveorang)
+
+    def test_apakah_di_display_sudah_simpan_dan_menampilkan_data(self):
+        response = Client().post('/kegiatan/details/1/', {'nama': 'HALO'})
+        html_kembalian = response.content.decode('utf8')
+        self.assertIn("HALO", html_kembalian)
         
+    
