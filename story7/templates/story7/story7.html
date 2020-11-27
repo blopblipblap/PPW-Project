@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Jadwal Matkul Vanessa</title>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock meta %}
+
+{% block content %}
+<section id="Judul">
+    <div class="welcome row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+            <img id="spongbob" src="{% static 'story_7/coolaf.gif' %}">
+        </div>
+        <div class="col-lg-8 col-md-7 col-xl-9">
+            <h1>Profile</h1>
+            <p>Untuk mengenal saya dengan lebih baik 0_0</p>
+        </div>
+    </div>
+</section>
+
+<section id="isiAccordion">
+    <div class="stories">
+        <h2 class="headingform">Salam Kenal!</h2>
+        <div id="accordion">
+            <!--Section 1-->
+            <div>
+                <div class="flexing">
+                    <div class="accordion-header">
+                        <h3 class="header">Profile Singkat</h3>
+                    </div>
+                    <div class="ikon">
+                        <img class="atas" src="{% static 'story_7/arrow_upward-24px.svg' %}">
+                        <img class="bawah" src="{% static 'story_7/arrow_downward-24px.svg' %}">
+                    </div>
+                </div>
+                <div>
+                    <p class="accordion-text">
+                        Nama: Vanessa Emily Agape<br>
+                        TTL: Jakarta, 5 Januari 2001<br>
+                        Kuliah: Universitas Indonesia, Fakultas Ilmu Komputer<br>
+                        Hobby: Tidur :)
+                    </p>
+                </div>
+            </div>
+            <!--Section 2-->
+            <div>
+                <div class="flexing">
+                    <div class="accordion-header">
+                        <h3 class="header">Pengalaman</h3>
+                    </div>
+                    <div class="ikon">
+                        <img class="atas" src="{% static 'story_7/arrow_upward-24px.svg' %}">
+                        <img class="bawah" src="{% static 'story_7/arrow_downward-24px.svg' %}">
+                    </div>
+                </div>
+                <div>
+                    <ul class="accordion-text">
+                        <li>Social Project 2019, PJ Dokumentasi</li>
+                        <li>BEM Fasilkom UI 2020, Staff Biro Media</li>
+                        <li>Pesta Rakyat Komputer, Staff Visual Design</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Section 3-->
+            <div>
+                <div class="flexing">
+                    <div class="accordion-header">
+                        <h3 class="header">Aktivitas</h3>
+                    </div>
+                    <div class="ikon">
+                        <img class="atas" src="{% static 'story_7/arrow_upward-24px.svg' %}">
+                        <img class="bawah" src="{% static 'story_7/arrow_downward-24px.svg' %}">
+                    </div>
+                </div>
+                <div>
+                    <ul class="accordion-text">
+                        <li>Story 7 PPW</li>
+                        <li>Lab 3 SDA</li>
+                        <li>Genshin Impact</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Section 4-->
+            <div>
+                <div class="flexing">
+                    <div class="accordion-header">
+                        <h3 class="header">Prestasi</h3>
+                    </div>
+                    <div class="ikon">
+                        <img class="atas" src="{% static 'story_7/arrow_upward-24px.svg' %}">
+                        <img class="bawah" src="{% static 'story_7/arrow_downward-24px.svg' %}">
+                    </div>
+                </div>
+                <div>
+                    <ul class="accordion-text">
+                        <li>OSN Astronomi</li>
+                        <li>Gatau</li>
+                        <li>Saya gapunya prestasi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="#Judul">
+    <button id="up">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+</a>
+
+<div class="footer">
+    <img class="jempol" src="{%static 'img/jempol.gif' %}">
+    <h4>© Story 7 PPW</h4>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{% static 'js/story7.js' %}"></script>
+{% endblock content %}
