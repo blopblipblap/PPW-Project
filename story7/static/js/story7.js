@@ -1,5 +1,10 @@
 $(function () {
-    $("#accordion").accordion({ heightStyle: 'content', header: "> div > div" });
+    $("#accordion").accordion({ 
+        heightStyle: 'content', 
+        header: "> div > div",
+        active: false,
+        collapsible: true
+     });
 });
 
 $(document).ready(function () {
