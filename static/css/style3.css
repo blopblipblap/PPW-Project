@@ -559,6 +559,9 @@ a:hover {
         text-align: center;
         margin: 15px 0px 0px 0px;
     }
+    .header {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 768px) {
