@@ -8,7 +8,7 @@ class story7(TestCase):
     def test_urlnya_ada(self):
         response = Client().get('/story7/')
         self.assertEquals(response.status_code, 200)
-        
+
     #Cek template
     def test_template_yang_digunakan(self):
         response = Client().get('/story7/')
