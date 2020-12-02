@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'forms',
     'kegiatan',
     'story7',
+    'story8',
 ]
 
 MIDDLEWARE = [

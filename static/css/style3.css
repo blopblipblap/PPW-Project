@@ -497,7 +497,34 @@ a:hover {
 }
 
 .atas:hover, .bawah:hover {
-    background-color: rgba(0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tabel {
+    font-size: 20px;
+    font-weight: 300;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 30px #111010;
+    padding: 10px;
+}
+th, td {
+    padding: 15px;
+    border: 1px solid #ff5335;
+    color: #3e92a3;
+    max-width: 300px;
+}
+
+.cover {
+    height: 100%;
+}
+
+#bukubuku {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px
 }
 /*keyframes */
 @keyframes naek {

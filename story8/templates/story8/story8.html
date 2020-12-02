@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Koleksi Buku</title>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock meta %}
+
+{% block content %}
+<section id="Judul">
+    <div class="welcome row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+            <img id="spongbob" src="{% static 'story_7/coolaf.gif' %}">
+        </div>
+        <div class="col-lg-8 col-md-7 col-xl-9">
+            <h1>Koleksi Buku</h1>
+            <p>Saatnya membaca buku</p>
+        </div>
+    </div>
+</section>
+
+<section id="isiBuku">
+    <div class="stories">
+        <h2 class="headingform">Silahkan cari buku yang kamu mau</h2>
+        <div id="bukubuku">
+            <input id="search" placeholder="Masukan kata kunci">
+            <table class="tabel">
+                <tr id="boldy">
+                    <th>No</th>
+                    <th>Cover</th>
+                    <th>Nama Buku</th>
+                    <th>Pengarang</th>
+                </tr>
+                <!--<tr>
+                    <td>1</td>
+                    <td><img class="cover"src="{% static 'story_8/bobo.jpeg' %}"></td>
+                    <td>Majalah Bobo</td>
+                    <td>Sapa yak</td>
+                </tr>-->
+            </table>
+        </div>
+    </div>
+</section>
+
+<a href="#Judul">
+    <button id="up">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </button>
+</a>
+
+<div class="footer">
+    <img class="jempol" src="{%static 'img/jempol.gif' %}">
+    <h4>© Story 8 PPW</h4>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="{% static 'story8_js/story8.js' %}"></script>
+{% endblock content %}
