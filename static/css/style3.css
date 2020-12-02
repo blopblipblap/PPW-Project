@@ -507,7 +507,7 @@ a:hover {
     margin-top: 20px;
     text-align: center;
     box-shadow: 0px 0px 30px #111010;
-    padding: 10px;
+    padding: 20px;
 }
 th, td {
     padding: 15px;
@@ -520,6 +520,13 @@ th, td {
     height: 100%;
 }
 
+.deskto {
+    display: table;
+}
+
+.mobil {
+    display: none;
+}
 #bukubuku {
     align-items: center;
     text-align: center;
@@ -588,6 +595,15 @@ th, td {
     }
     .header {
         font-size: 20px;
+    }
+    .deskto {
+        display: none;
+    }
+    .mobil {
+        display: table;
+    }
+    .cover {
+        height: 100%;
     }
 }
 
