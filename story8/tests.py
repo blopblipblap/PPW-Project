@@ -22,3 +22,9 @@ class story8(TestCase):
     def test_story8_ada(self):
         found = resolve('/story8/data')
         self.assertEquals(found.func, perantara)
+
+    def test_api(self):
+        response = Client().get('/story8/data?q=test')
+        self.assertIn("items", response.content.decode('utf-8'))
+
+    
