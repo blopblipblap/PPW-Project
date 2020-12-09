@@ -27,11 +27,18 @@
       <a href="{% url 'index' %}"><li class="linky">Story 1</li></a>
       <a href="https://www.figma.com/proto/4i9KTjtrtS8zBCi1U3fLQm/story-2-pepew?node-id=43%3A0&scaling=min-zoom">
         <li class="linky">Story 2</li></a>
-        <a href="{% url 'aboutme' %}"><li class="linky">Story 3</li></a>
-        <a href="{% url 'read' %}"><li class="linky">Story 5</li></a>
-        <a href="{% url 'kegiatan' %}"><li class="linky">Story 6</li></a>
-        <a href="{% url 'story7' %}"><li class="linky">Story 7</li></a>
-        <a href="{% url 'story8' %}"><li class="linky">Story 8</li></a>
+      <a href="{% url 'aboutme' %}"><li class="linky">Story 3</li></a>
+      <a href="{% url 'read' %}"><li class="linky">Story 5</li></a>
+      <a href="{% url 'kegiatan' %}"><li class="linky">Story 6</li></a>
+      <a href="{% url 'story7' %}"><li class="linky">Story 7</li></a>
+      <a href="{% url 'story8' %}"><li class="linky">Story 8</li></a>
+      <!--Story 9-->
+      {% if user.is_authenticated %}
+      <a href="{% url 'logout' %}"><li class="linky">Log Out</li></a>
+      {% else %}
+      <a href="{% url 'login' %}"><li class="linky">Log In</li></a>
+      <a href="{% url 'register' %}"><li class="linky">Register</li></a>
+      {% endif %}
     </ul>
   </nav>
 </body>

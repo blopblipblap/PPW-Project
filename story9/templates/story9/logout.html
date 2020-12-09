@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Koleksi Buku</title>
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock meta %}
+
+{% block content %}
+<section id="isiLogin">
+    <div class="loginregister container">
+        <div id="kotaklogin">
+            <h2>Anda telah logout</h2>
+            <div class="borderatas">
+                <small class="text-muted">
+                    <a href="{% url 'login' %}">Log In lagi</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+{% endblock content %}

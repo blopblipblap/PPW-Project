@@ -14,7 +14,11 @@
       <img id="spongbob" src="{% static 'img/spongbob.gif' %}">
     </div>
     <div class="col-lg-8 col-md-7 col-xl-9">
-      <h1>Hello, world!</h1>
+      {% if user.is_authenticated %}
+      <h1>Hello, {{ user.get_username }}!</h1>
+      {% else %}
+      <h1>Hello, anon!</h1>
+      {% endif %}
       <p>Website ini adalah terminal untuk story-story PPW milik saya,
         Vanessa :D
       </p>
@@ -143,8 +147,12 @@
             <h3>Story 9</h3>
             <p class="clickme">Hover / Touch me!</p>
             <p class="penjelasan">
-              Coming Soon!!!
+              #9 Authentication, Cookie, and Session<br>
+              Membuat login page, logout page, dan signup page.
             </p>
+            <p class="link">
+              ><a href="{% url 'login' %}">Hasil Story 9 saya</a>
+              < </p>
           </div>
         </div>
 

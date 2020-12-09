@@ -328,6 +328,7 @@ a:hover {
     animation: naek .9s ease forwards;
 }
 
+/*Story 6 */
 .headingkeg {
     font-size: 30px;
 }
@@ -427,6 +428,7 @@ a:hover {
     color: #ff5335;
 }
 
+/*Story 7 */
 #accordion {
     max-width: 1000px;
     margin: auto;
@@ -500,6 +502,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Story 8 */
 .tabel {
     font-size: 20px;
     font-weight: 300;
@@ -527,11 +530,52 @@ th, td {
 .mobil {
     display: none;
 }
+
 #bukubuku {
     align-items: center;
     text-align: center;
     margin: auto;
     margin-top: 50px
+}
+
+/* Story 9 */
+.loginregister {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding: 50px !important;
+    background-color: #353535;
+    color: #3e92a3;
+    animation: naek .8s ease forwards;
+    justify-content: center;
+    height: 100vh;
+    max-width: 70vh !important;
+}
+
+.headinglogin {
+    font-size: 40px;
+    text-align: center;
+    color: #ff5335;
+    margin-bottom: 30px;
+}
+
+.borderatas {
+    border-top: 1px solid #ff5335;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.loginboton {
+    background-color: #3e92a3;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    margin-top: 20px;
+    color: #dfe0d4;
+    transition-duration: 0.3s;
+    transition-property: all;
 }
 /*keyframes */
 @keyframes naek {
@@ -604,6 +648,12 @@ th, td {
     }
     .cover {
         height: 100%;
+    }
+    .headinglogin {
+        font-size: 25px;
+    }
+    .loginboton {
+        margin: 0;
     }
 }
 
