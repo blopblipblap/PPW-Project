@@ -5,7 +5,7 @@ from django.contrib import messages
 # Create your views here.
 def register(request):
     form = UserCreationForm(request.POST or None)
-    if (form.is_valid and request.method == 'POST'):
+    if (form.is_valid() and request.method == 'POST'):
         form.save()
         username = form.cleaned_data.get('username')
         messages.success(request, f'Akun telah dibuat untuk {username}')
